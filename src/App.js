@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './NavBar';
+import MainContent from './MainContent';
+import Members from './Members';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  	<div className="everything">
+
+  		<div id="navbar">
+      		<NavBar />
+      	</div>
+
+	    <div className="App">
+
+	    	<div>
+		      <h1>  Redrix Longsword </h1>
+		    </div>
+
+		        
+		    <div>
+		      <MainContent />
+		    </div>
+
+	    </div>
+		    <div id="footer">
+		    	<Footer />
+		    </div>
     </div>
   );
 }
